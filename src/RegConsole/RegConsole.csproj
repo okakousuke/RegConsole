@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- WinForms は Windows 専用。net8.0-windows を指定する -->
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>RegConsole</RootNamespace>
+    <AssemblyName>RegConsole</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- SerialPort を使うために必要（NuGet から自動復元される） -->
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- コマンド定義は「コード外」に置くのが肝。ビルド時に出力フォルダへコピーする -->
+    <None Update="commands.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
