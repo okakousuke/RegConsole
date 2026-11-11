@@ -1,6 +1,6 @@
 # RegConsole — レジスタ叩き簡易コンソール（記事用サンプル）
 
-[![PayPalで開発を支援する](https://img.shields.io/badge/PayPal-Donate-0070BA?logo=paypal&logoColor=white&style=for-the-badge)](https://paypal.me/okako1124)
+[![PayPalで開発を支援する](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/okako1124)
 
 「組み込み実践編 A-5：自作ツールでレジスタを叩く」のサンプルコードです。
 TeraTerm でのコマンド手打ち／マクロを卒業し、C# WinForms の GUI で
